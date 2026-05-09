@@ -1,0 +1,3 @@
+/cdn-cgi/styles/cf.errors.css
+/cdn-cgi/styles/cf.errors.ie.css
+https://www.cloudflare.com/5xx-error-landing
