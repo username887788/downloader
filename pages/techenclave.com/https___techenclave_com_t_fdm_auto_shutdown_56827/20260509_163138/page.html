@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FDM auto shutdown - Software &amp; Tools - TechEnclave</title>
+    <meta name="description" content="I’m using Free download manager. How to auto shutdown my system after downloading is completed. I’m not able to configure the settings in fdm. Anyone using please letme know the settings. 
+Thanks in advance.">
+    <meta name="generator" content="Discourse 2026.4.0-latest - https://github.com/discourse/discourse version 0e03b4170faab3d50f0c161601ba9f75f5f31a42">
+<link rel="icon" type="image/png" href="https://techenclave.com/uploads/default/optimized/3X/6/7/6772377a1bd34f65012f268a3816b27bb26d52ab_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://techenclave.com/uploads/default/optimized/3X/0/5/058b0b5cd1a50d307e653b2506bbfacceef776ec_2_180x180.png">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+
+<meta name="color-scheme" content="light dark">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+<link rel="canonical" href="https://techenclave.com/t/fdm-auto-shutdown/56827" />
+
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://techenclave.com/opensearch.xml" title="TechEnclave Search">
+
+    
+    <link href="/stylesheets/color_definitions_techenclave-light_65_46_3b78744414ef00e498cd3e6a6a042d9744fd2660.css?__ws=techenclave.com" media="(prefers-color-scheme: light)" rel="stylesheet" class="light-scheme" data-scheme-id="65"/><link href="/stylesheets/color_definitions_dark_1_46_59662e33b94fc91e56085dc65d5a31cfd9f5ad9b.css?__ws=techenclave.com" media="(prefers-color-scheme: dark)" rel="stylesheet" class="dark-scheme" data-scheme-id="1"/>
+
+<link href="/stylesheets/common_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common"  />
+
+  <link href="/stylesheets/mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="mobile"  />
+  <link href="/stylesheets/desktop_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="desktop"  />
+
+
+
+    <link href="/stylesheets/automation_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="automation"  />
+    <link href="/stylesheets/checklist_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="checklist"  />
+    <link href="/stylesheets/discourse-adplugin_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-adplugin"  />
+    <link href="/stylesheets/discourse-ai_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-ai"  />
+    <link href="/stylesheets/discourse-cakeday_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-cakeday"  />
+    <link href="/stylesheets/discourse-data-explorer_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-data-explorer"  />
+    <link href="/stylesheets/discourse-details_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-details"  />
+    <link href="/stylesheets/discourse-gamification_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-gamification"  />
+    <link href="/stylesheets/discourse-lazy-videos_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-lazy-videos"  />
+    <link href="/stylesheets/discourse-local-dates_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+    <link href="/stylesheets/discourse-narrative-bot_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+    <link href="/stylesheets/discourse-presence_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-presence"  />
+    <link href="/stylesheets/discourse-reactions_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-reactions"  />
+    <link href="/stylesheets/discourse-rewind_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-rewind"  />
+    <link href="/stylesheets/discourse-solved_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-solved"  />
+    <link href="/stylesheets/discourse-templates_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-templates"  />
+    <link href="/stylesheets/discourse-topic-voting_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="discourse-topic-voting"  />
+    <link href="/stylesheets/docker_manager_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="docker_manager"  />
+    <link href="/stylesheets/footnote_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="footnote"  />
+    <link href="/stylesheets/poll_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="poll"  />
+    <link href="/stylesheets/spoiler-alert_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="spoiler-alert"  />
+    <link href="/stylesheets/tecenc-badges_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-badges"  />
+    <link href="/stylesheets/tecenc-catalog_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-catalog"  />
+    <link href="/stylesheets/tecenc-market_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-market"  />
+    <link href="/stylesheets/tecenc-membership_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-membership"  />
+    <link href="/stylesheets/tecenc-simple-blog_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-simple-blog"  />
+    <link href="/stylesheets/tecenc-trader_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-trader"  />
+    <link href="/stylesheets/tecenc-welcome_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="tecenc-welcome"  />
+    <link href="/stylesheets/discourse-ai_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-ai_mobile"  />
+    <link href="/stylesheets/discourse-gamification_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-gamification_mobile"  />
+    <link href="/stylesheets/discourse-reactions_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-reactions_mobile"  />
+    <link href="/stylesheets/discourse-rewind_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-rewind_mobile"  />
+    <link href="/stylesheets/tecenc-membership_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="tecenc-membership_mobile"  />
+    <link href="/stylesheets/tecenc-trader_mobile_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="tecenc-trader_mobile"  />
+    <link href="/stylesheets/discourse-ai_desktop_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="discourse-ai_desktop"  />
+    <link href="/stylesheets/discourse-gamification_desktop_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="discourse-gamification_desktop"  />
+    <link href="/stylesheets/discourse-reactions_desktop_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="discourse-reactions_desktop"  />
+    <link href="/stylesheets/poll_desktop_e8e0b2f586dfecc2c43e067e26725131810de814.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="/stylesheets/common_theme_48_3cba2cec42e28ca990feec7f8d67fa2456f6b2cf.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="48" data-theme-name="category banners"/>
+<link href="/stylesheets/common_theme_47_bf225a63736da88a9b277f872ff61212e4dc318c.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="47" data-theme-name="custom header links"/>
+<link href="/stylesheets/common_theme_53_0fd91fbde41e392485ee6c3c7df3d89707fcaa44.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="53" data-theme-name="discourse mermaid"/>
+<link href="/stylesheets/common_theme_35_af7c738a96b99c4794deadf38270f1c858d8cd28.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="35" data-theme-name="sidebar theme toggle"/>
+<link href="/stylesheets/common_theme_46_5c1f1348c6193fe2e912a89057fc5586e9c83c37.css?__ws=techenclave.com" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="46" data-theme-name="core"/>
+    <link href="/stylesheets/mobile_theme_46_8ab76469986cf9e0746e6bb6b4d9b750e3bf6f91.css?__ws=techenclave.com" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="mobile_theme" data-theme-id="46" data-theme-name="core"/>
+    <link href="/stylesheets/desktop_theme_37_387343e6636a7e894245d79d13032cbd2e469721.css?__ws=techenclave.com" media="(min-width: 40rem)" rel="stylesheet" data-target="desktop_theme" data-theme-id="37" data-theme-name="right sidebar blocks"/>
+
+    
+    <meta id="data-ga-universal-analytics" data-tracking-code="G-91G3JY08DR" data-json="{&quot;cookieDomain&quot;:&quot;auto&quot;}" data-auto-link-domains="">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-91G3JY08DR" nonce="DLEUbdNCfgMb7AFH2D9HCp7m2"></script>
+  <script defer src="/assets/google-universal-analytics-v4-ba0fc09a.js" data-discourse-entrypoint="google-universal-analytics-v4" nonce="DLEUbdNCfgMb7AFH2D9HCp7m2"></script>
+
+
+        <link rel="alternate nofollow" type="application/rss+xml" title="RSS feed of &#39;FDM auto shutdown&#39;" href="https://techenclave.com/t/fdm-auto-shutdown/56827.rss" />
+    <meta property="og:site_name" content="TechEnclave" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://techenclave.com/uploads/default/original/3X/0/5/058b0b5cd1a50d307e653b2506bbfacceef776ec.png" />
+<meta property="og:image" content="https://techenclave.com/uploads/default/original/3X/0/5/058b0b5cd1a50d307e653b2506bbfacceef776ec.png" />
+<meta property="og:url" content="https://techenclave.com/t/fdm-auto-shutdown/56827" />
+<meta name="twitter:url" content="https://techenclave.com/t/fdm-auto-shutdown/56827" />
+<meta property="og:title" content="FDM auto shutdown" />
+<meta name="twitter:title" content="FDM auto shutdown" />
+<meta property="og:description" content="I’m using Free download manager. How to auto shutdown my system after downloading is completed. I’m not able to configure the settings in fdm. Anyone using please letme know the settings.  Thanks in advance." />
+<meta name="twitter:description" content="I’m using Free download manager. How to auto shutdown my system after downloading is completed. I’m not able to configure the settings in fdm. Anyone using please letme know the settings.  Thanks in advance." />
+<meta property="og:article:section" content="Software and Dev" />
+<meta property="og:article:section:color" content="12A89D" />
+<meta property="og:article:section" content="Software &amp; Tools" />
+<meta property="og:article:section:color" content="BF1E2E" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 min 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="14 ❤" />
+<meta property="article:published_time" content="2005-11-28T09:20:50+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    <meta name="llms-txt" content="https://techenclave.com/llms.txt">
+<meta name="llms-full-txt" content="https://techenclave.com/llms-full.txt">
+<meta name="llms-sitemaps-txt" content="https://techenclave.com/sitemaps.txt">
+<meta property="og:locale" content="en">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="FDM auto shutdown">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:label1" content="Replies">
+<meta name="twitter:data1" content="4">
+<meta name="twitter:label2" content="Author">
+<meta name="twitter:data2" content="Santosh">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://techenclave.com/#website",
+    "name": "TechEnclave",
+    "url": "https://techenclave.com",
+    "description": "India’s top tech forum for PC builds, gadgets, gaming, and hardware discussions. Join TechEnclave to connect with a passionate tech community.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://techenclave.com/#organization",
+      "name": "TechEnclave",
+      "url": "https://techenclave.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://techenclave.com/uploads/default/original/3X/1/9/19eb4bbe0a5e9288dc8c244f3490833ab41a7589.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": null,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "admin@techenclave.com",
+        "availableLanguage": [
+          "en"
+        ]
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://techenclave.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://techenclave.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Software and Dev",
+        "item": "https://techenclave.com/c/software-cloud-and-development/10"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Software & Tools",
+        "item": "https://techenclave.com/c/software-tools/54"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "FDM auto shutdown",
+        "item": "https://techenclave.com/t/fdm-auto-shutdown/56827"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "DiscussionForumPosting",
+    "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827",
+    "url": "https://techenclave.com/t/fdm-auto-shutdown/56827",
+    "headline": "FDM auto shutdown",
+    "name": "FDM auto shutdown",
+    "description": "I’m using Free download manager. How to auto shutdown my system after downloading is completed. I’m not able to configure the settings in fdm. Anyone using please letme know the settings. \nThanks in advance.",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@id": "https://techenclave.com/#website"
+    },
+    "breadcrumb": {
+      "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827#breadcrumb"
+    },
+    "articleBody": "I'm using Free download manager. How to auto shutdown my system after downloading is completed. I'm not able to configure the settings in fdm. Anyone using please letme know the settings.\n\nThanks in advance.",
+    "datePublished": "2005-11-28T09:20:50Z",
+    "dateModified": "2026-03-07T09:50:24Z",
+    "author": {
+      "@type": "Person",
+      "@id": "https://techenclave.com/u/Santosh#person",
+      "name": "Santosh",
+      "identifier": "Santosh",
+      "url": "https://techenclave.com/u/Santosh",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://techenclave.com/letter_avatar_proxy/v4/letter/s/e480ec/240.png",
+        "width": 240,
+        "height": 240
+      },
+      "interactionStatistic": [
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/WriteAction",
+          "userInteractionCount": 5,
+          "description": "Created topics"
+        },
+        {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/CommentAction",
+          "userInteractionCount": 7,
+          "description": "Written replies"
+        }
+      ]
+    },
+    "commentCount": 4,
+    "interactionStatistic": [
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/ViewAction",
+        "userInteractionCount": 6999,
+        "description": null
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/LikeAction",
+        "userInteractionCount": 14,
+        "description": null
+      },
+      {
+        "@type": "InteractionCounter",
+        "interactionType": "https://schema.org/CommentAction",
+        "userInteractionCount": 2,
+        "description": null
+      }
+    ],
+    "comment": [
+      {
+        "@type": "Comment",
+        "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827/2#comment",
+        "url": "https://techenclave.com/t/fdm-auto-shutdown/56827/2",
+        "text": "hello i know this is a late reply but to auto shutdown go in the tabs on the right top and press autoshutdown- shutdown. Thanks for the 18 year wait",
+        "dateCreated": "2023-12-16T20:42:54Z",
+        "dateModified": "2025-06-26T08:03:30Z",
+        "upvoteCount": 10,
+        "author": {
+          "@type": "Person",
+          "@id": "https://techenclave.com/u/Zhelt#person",
+          "name": "Zhelt",
+          "identifier": "Zhelt",
+          "url": "https://techenclave.com/u/Zhelt",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://techenclave.com/user_avatar/techenclave.com/zhelt/240/8139_2.png",
+            "width": 240,
+            "height": 240
+          },
+          "interactionStatistic": [
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/CommentAction",
+              "userInteractionCount": 1,
+              "description": "Written replies"
+            },
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/LikeAction",
+              "userInteractionCount": 10,
+              "description": "Received likes"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Comment",
+        "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827/3#comment",
+        "url": "https://techenclave.com/t/fdm-auto-shutdown/56827/3",
+        "text": "**I made an account** just to comment on this, but bro you’re awesome lol. You helped me actually… and damn, 18 YEARS of waiting?",
+        "dateCreated": "2026-03-06T16:51:01Z",
+        "dateModified": "2026-03-06T16:51:01Z",
+        "upvoteCount": 0,
+        "author": {
+          "@type": "Person",
+          "@id": "https://techenclave.com/u/Urman0#person",
+          "name": "Urman0",
+          "identifier": "Urman0",
+          "url": "https://techenclave.com/u/Urman0",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://techenclave.com/letter_avatar_proxy/v4/letter/u/ecae2f/240.png",
+            "width": 240,
+            "height": 240
+          },
+          "interactionStatistic": [
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/CommentAction",
+              "userInteractionCount": 1,
+              "description": "Written replies"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Comment",
+        "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827/4#comment",
+        "url": "https://techenclave.com/t/fdm-auto-shutdown/56827/4",
+        "text": "Funny thing about this thread:\n\n* OP @Santosh created his account in 2005 but last logged-in in 2006.\n\n\n* Then, 18 years later, @Zhelt creates an account in December 2023, logs in just to reply to this thread, and disappears.\n\n* Fast forward to 2026, and @Urman0 makes an account specifically to confirm that @Zhelt's solution worked.\n\nI have a feeling this is @Urman0's last login as well, we might never see them again.",
+        "dateCreated": "2026-03-06T17:27:59Z",
+        "dateModified": "2026-03-06T17:31:48Z",
+        "upvoteCount": 0,
+        "author": {
+          "@type": "Person",
+          "@id": "https://techenclave.com/u/Heisen#person",
+          "name": "",
+          "identifier": "Heisen",
+          "url": "https://techenclave.com/u/Heisen",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://techenclave.com/user_avatar/techenclave.com/heisen/240/7951_2.png",
+            "width": 240,
+            "height": 240
+          },
+          "interactionStatistic": [
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/WriteAction",
+              "userInteractionCount": 41,
+              "description": "Created topics"
+            },
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/CommentAction",
+              "userInteractionCount": 2771,
+              "description": "Written replies"
+            },
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/LikeAction",
+              "userInteractionCount": 3599,
+              "description": "Received likes"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Comment",
+        "@id": "https://techenclave.com/t/fdm-auto-shutdown/56827/5#comment",
+        "url": "https://techenclave.com/t/fdm-auto-shutdown/56827/5",
+        "text": "[quote=\"Heisen, post:4, topic:56827\"]\nFunny thing about this thread: OP @Santosh created his account in 2005 but last logged-in in 2006. Then, 18 years later, @Zhelt creates an account in December 2023, logs in just to reply to this threa...\n[/quote]\n\nI had a feeling that this feature was not available 20 years ago. Just did a search to see if I can trace it and lo and behold, Google’s AI summary links back to this thread as source to confidently state that it was available as of November 2005.\n\nThe loop is complete.",
+        "dateCreated": "2026-03-07T09:50:24Z",
+        "dateModified": "2026-03-07T09:50:24Z",
+        "upvoteCount": 4,
+        "author": {
+          "@type": "Person",
+          "@id": "https://techenclave.com/u/sama#person",
+          "name": "",
+          "identifier": "sama",
+          "url": "https://techenclave.com/u/sama",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://techenclave.com/letter_avatar_proxy/v4/letter/s/7993a0/240.png",
+            "width": 240,
+            "height": 240
+          },
+          "interactionStatistic": [
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/WriteAction",
+              "userInteractionCount": 247,
+              "description": "Created topics"
+            },
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/CommentAction",
+              "userInteractionCount": 5268,
+              "description": "Written replies"
+            },
+            {
+              "@type": "InteractionCounter",
+              "interactionType": "https://schema.org/LikeAction",
+              "userInteractionCount": 3661,
+              "description": "Received likes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
+</script>
+
+
+
+  </head>
+  <body class="crawler ">
+    
+    <header>
+  <a href="/">TechEnclave</a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+        <div id="topic-title">
+    <h1>
+      <a href="/t/fdm-auto-shutdown/56827">FDM auto shutdown</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/c/software-cloud-and-development/10" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #12A89D'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Software and Dev</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/c/software-cloud-and-development/software-tools/54" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #BF1E2E'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Software &amp; Tools</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </span>
+      </div>
+
+  </div>
+
+  
+
+    <div itemscope="itemscope" itemtype="http://schema.org/DiscussionForumPosting">
+      <meta itemprop='headline' content='FDM auto shutdown'>
+      <link itemprop='url' href='https://techenclave.com/t/fdm-auto-shutdown/56827'>
+      <meta itemprop='datePublished' content='2005-11-28T09:20:50Z'>
+      <meta itemprop='keywords' content=''>
+          <meta itemprop='articleSection' content='Software &amp; Tools'>
+        <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+          <meta itemprop='name' content='TechEnclave'>
+            <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+              <meta itemprop='url' content='https://techenclave.com/uploads/default/original/3X/1/9/19eb4bbe0a5e9288dc8c244f3490833ab41a7589.png'>
+            </div>
+        </div>
+
+
+
+          <div id='post_1'  class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a rel='nofollow' href='https://techenclave.com/u/Santosh'><span itemprop='name'>Santosh</span></a>
+                <meta itemprop='url' content='https://techenclave.com/u/Santosh'>
+                
+              </span>
+
+                <link itemprop="mainEntityOfPage" href="https://techenclave.com/t/fdm-auto-shutdown/56827">
+
+
+              <span class="crawler-post-infos">
+                  <time  datetime='2005-11-28T09:20:50Z' class='post-time'>
+                    November 28, 2005,  9:20am
+                  </time>
+                  <meta itemprop='dateModified' content='2005-11-28T09:20:50Z'>
+              <span itemprop='position'>1</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>I’m using Free download manager. How to auto shutdown my system after downloading is completed. I’m not able to configure the settings in fdm. Anyone using please letme know the settings.</p>
+<p>Thanks in advance.</p>
+            </div>
+
+              <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+                <meta itemprop="userInteractionCount" content="0" />
+                <span class='post-likes'></span>
+              </div>
+
+                <div class='crawler-linkback-list'>
+                    <div>
+                      <a href="https://techenclave.com/t/long-filename-problem-on-windows/130519/10">Long Filename problem on windows</a>
+                    </div>
+                </div>
+
+            
+
+          </div>
+          <div id='post_2' itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/Comment" class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a rel='nofollow' href='https://techenclave.com/u/Zhelt'><span itemprop='name'>Zhelt</span></a>
+                <meta itemprop='url' content='https://techenclave.com/u/Zhelt'>
+                
+              </span>
+
+
+
+              <span class="crawler-post-infos">
+                  <time itemprop='datePublished' datetime='2023-12-16T20:42:54Z' class='post-time'>
+                    December 16, 2023,  8:42pm
+                  </time>
+                  <meta itemprop='dateModified' content='2023-12-16T20:42:54Z'>
+              <span itemprop='position'>2</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>hello i know this is a late reply but to auto shutdown go in the tabs on the right top and press autoshutdown- shutdown. Thanks for the 18 year wait</p>
+            </div>
+
+              <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+                <meta itemprop="userInteractionCount" content="10" />
+                <span class='post-likes'>10 Likes</span>
+              </div>
+
+
+            
+
+          </div>
+          <div id='post_3' itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/Comment" class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a rel='nofollow' href='https://techenclave.com/u/Urman0'><span itemprop='name'>Urman0</span></a>
+                <meta itemprop='url' content='https://techenclave.com/u/Urman0'>
+                
+              </span>
+
+
+
+              <span class="crawler-post-infos">
+                  <time itemprop='datePublished' datetime='2026-03-06T16:51:01Z' class='post-time'>
+                    March 6, 2026,  4:51pm
+                  </time>
+                  <meta itemprop='dateModified' content='2026-03-06T16:51:01Z'>
+              <span itemprop='position'>3</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p><strong>I made an account</strong> just to comment on this, but bro you’re awesome lol. You helped me actually… and damn, 18 YEARS of waiting?</p>
+            </div>
+
+              <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+                <meta itemprop="userInteractionCount" content="0" />
+                <span class='post-likes'></span>
+              </div>
+
+
+            
+
+          </div>
+          <div id='post_4' itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/Comment" class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a rel='nofollow' href='https://techenclave.com/u/Heisen'><span itemprop='name'>Heisen</span></a>
+                <meta itemprop='url' content='https://techenclave.com/u/Heisen'>
+                
+              </span>
+
+
+
+              <span class="crawler-post-infos">
+                  <time itemprop='datePublished' datetime='2026-03-06T17:27:59Z' class='post-time'>
+                    March 6, 2026,  5:27pm
+                  </time>
+                  <meta itemprop='dateModified' content='2026-03-06T17:27:59Z'>
+              <span itemprop='position'>4</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>Funny thing about this thread:</p>
+<ul>
+<li>
+<p>OP <a class="mention" href="/u/santosh">@Santosh</a> created his account in 2005 but last logged-in in 2006.</p>
+</li>
+<li>
+<p>Then, 18 years later, <a class="mention" href="/u/zhelt">@Zhelt</a> creates an account in December 2023, logs in just to reply to this thread, and disappears.</p>
+</li>
+<li>
+<p>Fast forward to 2026, and <a class="mention" href="/u/urman0">@Urman0</a> makes an account specifically to confirm that <a class="mention" href="/u/zhelt">@Zhelt</a>’s solution worked.</p>
+</li>
+</ul>
+<p>I have a feeling this is <a class="mention" href="/u/urman0">@Urman0</a>’s last login as well, we might never see them again.</p>
+            </div>
+
+              <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+                <meta itemprop="userInteractionCount" content="0" />
+                <span class='post-likes'></span>
+              </div>
+
+
+            
+
+          </div>
+          <div id='post_5' itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/Comment" class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a rel='nofollow' href='https://techenclave.com/u/sama'><span itemprop='name'>sama</span></a>
+                <meta itemprop='url' content='https://techenclave.com/u/sama'>
+                
+              </span>
+
+
+
+              <span class="crawler-post-infos">
+                  <time itemprop='datePublished' datetime='2026-03-07T09:50:24Z' class='post-time'>
+                    March 7, 2026,  9:50am
+                  </time>
+                  <meta itemprop='dateModified' content='2026-03-07T09:50:24Z'>
+              <span itemprop='position'>5</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <aside class="quote no-group quote-modified" data-username="Heisen" data-post="4" data-topic="56827">
+<div class="title">
+<div class="quote-controls"></div>
+<img alt="" width="24" height="24" src="https://techenclave.com/user_avatar/techenclave.com/heisen/48/7951_2.png" class="avatar"> Heisen:</div>
+<blockquote>
+<p>Funny thing about this thread: OP <a class="mention" href="/u/santosh">@Santosh</a> created his account in 2005 but last logged-in in 2006. Then, 18 years later, <a class="mention" href="/u/zhelt">@Zhelt</a> creates an account in December 2023, logs in just to reply to this threa…</p>
+</blockquote>
+</aside>
+<p>I had a feeling that this feature was not available 20 years ago. Just did a search to see if I can trace it and lo and behold, Google’s AI summary links back to this thread as source to confidently state that it was available as of November 2005.</p>
+<p>The loop is complete.</p>
+            </div>
+
+              <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+                <meta itemprop="userInteractionCount" content="4" />
+                <span class='post-likes'>4 Likes</span>
+              </div>
+
+
+            
+
+          </div>
+
+    </div>
+
+
+    <div id="related-topics" class="more-topics__list " role="complementary" aria-labelledby="related-topics-title">
+  <h3 id="related-topics-title" class="more-topics__list-title">
+    Related topics
+  </h3>
+  <div class="topic-list-container" itemscope itemtype='http://schema.org/ItemList'>
+    <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>
+    <table class='topic-list'>
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th></th>
+          <th class="replies">Replies</th>
+          <th class="views">Views</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="topic-list-item" id="topic-list-item-130519">
+            <td class="main-link" itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='1'>
+              <span class="link-top-line">
+                <a itemprop='url' href='https://techenclave.com/t/long-filename-problem-on-windows/130519' class='title raw-link raw-topic-link'>Long Filename problem on windows</a>
+              </span>
+              <div class="link-bottom-line">
+                  <a href='/c/software-cloud-and-development/software-tools/54' class='badge-wrapper bullet'>
+                    <span class='badge-category-bg' style='background-color: #BF1E2E'></span>
+                    <span class='badge-category clear-badge'>
+                      <span class='category-name'>Software &amp; Tools</span>
+                    </span>
+                  </a>
+                  <div class="discourse-tags">
+                  </div>
+              </div>
+            </td>
+            <td class="replies">
+              <span class='posts' title='posts'>12</span>
+            </td>
+            <td class="views">
+              <span class='views' title='views'>1137</span>
+            </td>
+            <td>
+              April 18, 2026
+            </td>
+          </tr>
+          <tr class="topic-list-item" id="topic-list-item-412356">
+            <td class="main-link" itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='2'>
+              <span class="link-top-line">
+                <a itemprop='url' href='https://techenclave.com/t/windows-11-january-2026-update-causes-shutdown-and-hibernate-failures/412356' class='title raw-link raw-topic-link'>Windows 11 January 2026 Update Causes Shutdown and Hibernate Failures</a>
+              </span>
+              <div class="link-bottom-line">
+                  <a href='/c/tech-news-discussion/enclave-community-news/32' class='badge-wrapper bullet'>
+                    <span class='badge-category-bg' style='background-color: #F1592A'></span>
+                    <span class='badge-category clear-badge'>
+                      <span class='category-name'>Enclave Community News</span>
+                    </span>
+                  </a>
+                  <div class="discourse-tags">
+                  </div>
+              </div>
+            </td>
+            <td class="replies">
+              <span class='posts' title='posts'>20</span>
+            </td>
+            <td class="views">
+              <span class='views' title='views'>430</span>
+            </td>
+            <td>
+              February 17, 2026
+            </td>
+          </tr>
+          <tr class="topic-list-item" id="topic-list-item-267499">
+            <td class="main-link" itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='3'>
+              <span class="link-top-line">
+                <a itemprop='url' href='https://techenclave.com/t/windows-10-turn-off-via-scheduled-tasks-issue/267499' class='title raw-link raw-topic-link'>Windows 10, turn off via scheduled tasks issue.</a>
+              </span>
+              <div class="link-bottom-line">
+                  <a href='/c/software-cloud-and-development/software-tools/54' class='badge-wrapper bullet'>
+                    <span class='badge-category-bg' style='background-color: #BF1E2E'></span>
+                    <span class='badge-category clear-badge'>
+                      <span class='category-name'>Software &amp; Tools</span>
+                    </span>
+                  </a>
+                  <div class="discourse-tags">
+                      <a href='https://techenclave.com/tag/windows/67' class='discourse-tag'>windows</a>
+                      
+                  </div>
+              </div>
+            </td>
+            <td class="replies">
+              <span class='posts' title='posts'>10</span>
+            </td>
+            <td class="views">
+              <span class='views' title='views'>5033</span>
+            </td>
+            <td>
+              February 17, 2024
+            </td>
+          </tr>
+          <tr class="topic-list-item" id="topic-list-item-272264">
+            <td class="main-link" itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='4'>
+              <span class="link-top-line">
+                <a itemprop='url' href='https://techenclave.com/t/group-buy-for-internet-download-manager/272264' class='title raw-link raw-topic-link'>Group buy for Internet download manager</a>
+              </span>
+              <div class="link-bottom-line">
+                  <a href='/c/software-cloud-and-development/software-tools/54' class='badge-wrapper bullet'>
+                    <span class='badge-category-bg' style='background-color: #BF1E2E'></span>
+                    <span class='badge-category clear-badge'>
+                      <span class='category-name'>Software &amp; Tools</span>
+                    </span>
+                  </a>
+                  <div class="discourse-tags">
+                  </div>
+              </div>
+            </td>
+            <td class="replies">
+              <span class='posts' title='posts'>35</span>
+            </td>
+            <td class="views">
+              <span class='views' title='views'>4557</span>
+            </td>
+            <td>
+              December 30, 2024
+            </td>
+          </tr>
+          <tr class="topic-list-item" id="topic-list-item-253999">
+            <td class="main-link" itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+              <meta itemprop='position' content='5'>
+              <span class="link-top-line">
+                <a itemprop='url' href='https://techenclave.com/t/youtube-downloader/253999' class='title raw-link raw-topic-link'>Youtube Downloader</a>
+              </span>
+              <div class="link-bottom-line">
+                  <a href='/c/software-cloud-and-development/software-tools/54' class='badge-wrapper bullet'>
+                    <span class='badge-category-bg' style='background-color: #BF1E2E'></span>
+                    <span class='badge-category clear-badge'>
+                      <span class='category-name'>Software &amp; Tools</span>
+                    </span>
+                  </a>
+                  <div class="discourse-tags">
+                  </div>
+              </div>
+            </td>
+            <td class="replies">
+              <span class='posts' title='posts'>50</span>
+            </td>
+            <td class="views">
+              <span class='views' title='views'>11837</span>
+            </td>
+            <td>
+              December 26, 2024
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/' itemprop="url">Home </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/categories' itemprop="url">Categories </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/guidelines' itemprop="url">Guidelines </a>
+        </span>
+      </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>
