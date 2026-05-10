@@ -1,0 +1,4 @@
+//telegram.org/img/apple-touch-icon.png
+//telegram.org/img/favicon-16x16.png
+//telegram.org/img/favicon-32x32.png
+//telegram.org/img/favicon.ico
